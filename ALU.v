@@ -17,7 +17,7 @@ always @(*) begin
  3'b001: result = a - b;        // SUB
  3'b010: result = ~a;           // NOT (only on a)
 
- // ⚠️ IMPORTANT FIX (shift amount limited)
+ //  IMPORTANT FIX (shift amount limited)
  3'b011: result = a << b[3:0];  // SHIFT LEFT
  3'b100: result = a >> b[3:0];  // SHIFT RIGHT
 
